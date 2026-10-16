@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+reference/spongebob-ai-main/
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+.DS_Store

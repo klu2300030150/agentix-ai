@@ -1,0 +1,79 @@
+.app-shell,
+.main-area,
+.content-grid,
+.chat-column {
+  min-height: 0;
+}
+
+.settings-modal .modal-head p::after {
+  content: "Blank credential fields keep previously saved credentials.";
+  display: block;
+  margin-top: 6px;
+  color: #858793;
+}
+
+.chat-column {
+  overflow: hidden;
+}
+
+.chat-scroll {
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+
+.task-strip {
+  flex: 0 0 auto;
+  max-height: min(28vh, 180px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.composer-wrap {
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 1;
+  background: #101115;
+}
+
+.settings-body {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.model-discovery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.model-discovery small,
+.onboarding-message small {
+  color: #858793;
+  line-height: 1.5;
+}
+
+.onboarding-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px auto;
+  color: #b8b9c3;
+}
+
+@media (max-height: 720px) {
+  .task-strip {
+    max-height: 90px;
+  }
+
+  .composer-wrap {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .composer-note {
+    display: none;
+  }
+}
